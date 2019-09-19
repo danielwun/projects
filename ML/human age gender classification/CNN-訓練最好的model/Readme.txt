@@ -1,9 +1,9 @@
-將程式解壓縮完 將所要預測的圖片覆蓋到testing資料夾底下
-運行 testing.py即可輸出其預測並存檔至target.csv
+How to use it?
 
-重新架構模型請使用face_detect.py指定檔案路徑與存檔路徑
-會將圖片抓出臉之後縮放到28*28的大小
+After Unzipping the file, puting all the target pictures under folder "testing."
+Running testing.py to get it's prediction in target.csv
 
-在使用cnn_v1.py裡面指定圖檔路徑 預設如adult/male/*.jpg
-會自動找出最佳值並將模型存檔 存檔路徑預設跟目錄底下
-將模型覆蓋至./model底下 在使用testing.py預測即可
+If you wish to reorganize the target pictures, use face_detect.py and assign input path and output path.
+It will detect face areas and make the pictures into 28*28 pixed size.
+
+Finally, assing target path, such as "adult/male/*.jpg," in cnn_v1.py, which will find the optimize parameters and save the model under the folder "./model," and then you are be able to run testing.py for predicting. 
